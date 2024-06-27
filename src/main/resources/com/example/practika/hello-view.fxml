@@ -4,20 +4,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<SplitPane dividerPositions="0.2985491071428572" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practika.HelloController">
+<SplitPane dividerPositions="0.2985491071428572" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-image: url('https://images.hdqwalls.com/download/mountains-minimalism-16-3840x2400.jpg');; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practika.HelloController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-            <Label layoutX="74.0" layoutY="401.0" prefHeight="33.0" prefWidth="43.0" text="Label" AnchorPane.bottomAnchor="12.999999999999979" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="88.0" />
-            <Button layoutX="139.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="Button" AnchorPane.bottomAnchor="16.999999999999982" AnchorPane.rightAnchor="42.33333333333334" />
-            <Button layoutX="20.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" text="Button" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="62.0" layoutY="401.0" prefHeight="33.0" prefWidth="58.0" text="Label" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="85.0" />
+            <Button layoutX="139.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" style="-fx-background-color: Blue-gray; -fx-border-color: black;" text="Button" AnchorPane.bottomAnchor="16.999999999999982" AnchorPane.rightAnchor="42.33333333333334">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="20.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: Blue-gray; -fx-border-color: black;" text="Button" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="20.0" />
             <ToggleButton layoutY="8.0" mnemonicParsing="false" text="ToggleButton" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="8.0" />
             <TextArea layoutX="103.0" layoutY="1.0" prefHeight="40.0" prefWidth="96.0" text="смена темы" AnchorPane.rightAnchor="6.333333333333343" AnchorPane.topAnchor="1.0">
                <font>
                   <Font size="13.0" />
                </font></TextArea>
-            <Button layoutX="14.0" layoutY="325.0" mnemonicParsing="false" onAction="#save" prefHeight="33.0" prefWidth="74.0" text="Save" textFill="#e43232" AnchorPane.bottomAnchor="89.0" AnchorPane.leftAnchor="14.0" />
-            <Button layoutX="114.0" layoutY="325.0" mnemonicParsing="false" onAction="#load" prefHeight="33.0" prefWidth="74.0" text="Load" textFill="#e43232" AnchorPane.bottomAnchor="88.99999999999997" AnchorPane.rightAnchor="17.333333333333343" />
+            <Button layoutX="14.0" layoutY="325.0" mnemonicParsing="false" onAction="#save" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: Blue-gray; -fx-border-color: black;" text="Save" AnchorPane.bottomAnchor="89.0" AnchorPane.leftAnchor="14.0" />
+            <Button layoutX="114.0" layoutY="325.0" mnemonicParsing="false" onAction="#load" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: Blue-gray; -fx-border-color: black;" text="Load" AnchorPane.bottomAnchor="88.99999999999997" AnchorPane.rightAnchor="17.333333333333343" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="520.0">
          <children>
@@ -52,7 +55,7 @@
             <Label fx:id="t9" layoutX="395.0" layoutY="372.0" prefHeight="41.0" prefWidth="74.0" AnchorPane.rightAnchor="17.0" />
             <Label fx:id="t10" layoutX="395.0" layoutY="406.0" prefHeight="39.0" prefWidth="74.0" AnchorPane.rightAnchor="17.0" />
             <TextArea fx:id="text8" layoutY="333.0" prefHeight="41.0" prefWidth="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="126.0" />
-            <Button layoutX="422.0" layoutY="1.0" mnemonicParsing="false" onAction="#D1" prefHeight="25.0" prefWidth="89.0" text="Отчистить" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="1.0" />
+            <Button layoutX="422.0" layoutY="1.0" mnemonicParsing="false" onAction="#D1" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: Blue-gray; -fx-border-color: black;" text="Отчистить" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="1.0" />
          </children></AnchorPane>
   </items>
 </SplitPane>
