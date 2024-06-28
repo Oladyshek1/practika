@@ -91,7 +91,7 @@ public class HelloController {
             text[i].setText("");
         }
         for (int i = 0; i != 10; i++){
-            checkBox[i].setSelected(false);;
+            checkBox[i].setSelected(false);
         }
     }
     @FXML

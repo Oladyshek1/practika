@@ -1,0 +1,30 @@
+.background{
+    -fx-background-image: url('https://i.pinimg.com/736x/7b/0a/b2/7b0ab2df5d3418406bbbba45cb2ec6fd.jpg');
+    -fx-background-size: cover;
+}
+.togglebutton{
+-fx-background-color: #42445A30;
+-fx-border-fill: #000000;
+-fx-prompt-text-fill: #FFFFFF;
+-fx-text-fill: #E6E6E8;
+}
+.button {
+-fx-background-color: #42445A30;
+-fx-border-fill: white;
+-fx-prompt-text-fill:#FFFFFF;
+-fx-text-fill: #E6E6E8;
+}
+.rawText{
+    -fx-text-background-color:#FFFFFF;
+}
+.checkBoxes{
+    -fx-text-fill: #42445A00;
+}
+.textFields{
+    -fx-text-fill: #000000;
+    -fx-background-color:#777777;
+    -fx-control-inner-background: #DADADA;
+}
+.split-pane > .split-pane-divider {
+    -fx-background-color: #ACACAC;
+}
