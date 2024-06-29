@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<SplitPane dividerPositions="0.2985491071428572" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practika.HelloController">
+<SplitPane fx:id="sPane" dividerPositions="0.2985491071428572" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practika.HelloController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+    <AnchorPane fx:id="background" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-            <Label layoutX="62.0" layoutY="401.0" prefHeight="33.0" prefWidth="58.0" text="Label" textFill="#fffdfd" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="85.0" />
-            <Button layoutX="139.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="23.0" text="Button" AnchorPane.bottomAnchor="16.999999999999982" AnchorPane.rightAnchor="42.33333333333334">
+            <Label fx:id="info" alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="401.0" prefHeight="33.0" prefWidth="29.0" text="Label" textFill="#fffdfd" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="85.00000000000001" />
+            <Button fx:id="dalee" layoutX="139.0" layoutY="405.0" mnemonicParsing="false" onAction="#setDalee" prefHeight="25.0" prefWidth="58.0" text="Далее" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="24.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -18,12 +18,12 @@
                   <URL value="@darkTheme.css" />
                   <URL value="@lightTheme.css" />
                </stylesheets></Button>
-            <Button layoutX="20.0" layoutY="405.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" text="Button" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="20.0">
+            <Button fx:id="nazad" layoutX="20.0" layoutY="405.0" mnemonicParsing="false" onAction="#setNazad" prefHeight="25.0" prefWidth="58.0" text="Назад" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="20.0">
                <stylesheets>
                   <URL value="@lightTheme.css" />
                   <URL value="@darkTheme.css" />
                </stylesheets></Button>
-            <ToggleButton layoutX="46.0" layoutY="14.0" mnemonicParsing="false" styleClass="togglebutton" text="Смена темы" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="14.0">
+            <ToggleButton fx:id="F" layoutX="46.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchTheme" styleClass="togglebutton" text="Смена темы" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="14.0">
                <stylesheets>
                   <URL value="@darkTheme.css" />
                   <URL value="@lightTheme.css" />
@@ -38,14 +38,10 @@
                   <URL value="@darkTheme.css" />
                   <URL value="@lightTheme.css" />
                </stylesheets></Button>
+            <Button layoutX="12.0" layoutY="259.0" mnemonicParsing="false" onAction="#sort" prefHeight="38.0" prefWidth="74.0" text="Sort" />
          </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="520.0">
+    <AnchorPane fx:id="background2" minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="520.0">
          <children>
-            <DatePicker layoutY="1.0" prefHeight="25.0" prefWidth="205.0" styleClass="textFields" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="281.0" AnchorPane.topAnchor="1.0">
-               <stylesheets>
-                  <URL value="@darkTheme.css" />
-                  <URL value="@lightTheme.css" />
-               </stylesheets></DatePicker>
             <CheckBox fx:id="checkBox1" layoutX="364.0" layoutY="60.0" mnemonicParsing="false" onAction="#time" prefHeight="25.0" prefWidth="17.0" styleClass="checkBoxes" text="1" textFill="WHITE" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="60.0">
                <stylesheets>
                   <URL value="@darkTheme.css" />
@@ -193,6 +189,7 @@
                   <URL value="@darkTheme.css" />
                   <URL value="@lightTheme.css" />
                </stylesheets></Button>
+            <TextArea fx:id="data" prefHeight="25.0" prefWidth="154.0" promptText="Введите дату" />
          </children></AnchorPane>
   </items>
    <stylesheets>
