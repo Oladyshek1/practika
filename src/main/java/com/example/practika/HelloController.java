@@ -2,8 +2,12 @@ package com.example.practika;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -92,6 +96,19 @@ public class HelloController {
     @FXML
     private void initialize() throws IOException {
         load();
+    }
+    @FXML
+    private void sprafka() throws IOException {
+//        SplitPane newPane = new SplitPane();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view2.fxml"));
+        Parent root = loader.load();
+        Scene newScene = new Scene(root);
+
+        Stage newStage = new Stage();
+        newStage.initModality(Modality.APPLICATION_MODAL);
+        newStage.setTitle("Справка");
+        newStage.setScene(newScene);
+        newStage.showAndWait();
     }
     @FXML
     private void sort() throws IOException {
